@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-exercise3",
+  "name": "node-http",
   "version": "1.0.0",
   "description": "Node HTTP Module Example",
   "main": "index.js",
