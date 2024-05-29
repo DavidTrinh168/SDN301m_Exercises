@@ -1,0 +1,7 @@
+npm install --save-exact express@4.18.2 (npm install express)
+npm install --save-exact morgan@1.10.0 (npm install morgan)
+npm install --save-exact body-parser@1.20.2 (npm install body-parser)
+npm install -g-exact express-generator@4.16.1 (npm install -g express-generator)
+mongod --dbpath=data --bind_ip 127.0.0.1
+npm install mongodb
+npm install assert
