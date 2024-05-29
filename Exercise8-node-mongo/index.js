@@ -1,35 +1,3 @@
-// const { MongoClient } = require('mongodb')
-
-// const url = 'mongodb://127.0.0.1:27017/';
-// const dbname = 'conFusion';
-// // const dboper = require('./operations');
-
-// const client = new MongoClient(url);
-
-// async function main() {
-//     await client.connect();
-//     console.log('Connected correctly to server')
-
-//     const db = client.db(dbname)
-//     const collection = db.collection('dishes')
-
-//     // Insert a document
-//     const result = await collection.insertOne({ "name": "Uthappizza", "description": "test" })
-//     console.log(result.ops)
-
-//     // Find all documents
-//     const docs = await collection.find({}).toArray()
-//     console.log("Found:\n", docs)
-
-//     // Drop the collection
-//     const dropResult = await db.dropCollection('dishes')
-//     console.log("Collection dropped:", dropResult)
-//     client.close()
-// }
-    
-// main()
-
-//============================================
 const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
@@ -46,9 +14,9 @@ async function main() {
         const db = client.db(dbname);
         const collection = db.collection('dishes');
 
-        // // Insert a document
-        // const insertResult = await collection.insertOne({ "name": "Uthappizza", "description": "test" });
-        // console.log("After Insert:\n", insertResult.ops);
+        // Insert a document
+        const insertResult = await collection.insertOne({ "name": "Uthappizza", "description": "test" });
+        console.log("After Insert:\n", insertResult.ops);
 
         // Find all documents
         const docs = await collection.find({}).toArray();

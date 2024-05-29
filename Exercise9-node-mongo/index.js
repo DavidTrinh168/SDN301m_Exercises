@@ -14,18 +14,6 @@ async function main() {
         const db = client.db(dbname);
         const collection = db.collection('dishes');
 
-        // // Insert a document
-        // const insertResult = await collection.insertOne({ "name": "Uthappizza", "description": "test" });
-        // console.log("After Insert:\n", insertResult.ops);
-
-        // // Find all documents
-        // const docs = await collection.find({}).toArray();
-        // console.log("Found:\n", docs);
-
-        // // Drop the collection
-        // const dropResult = await db.dropCollection('dishes');
-        // console.log("Collection dropped:", dropResult);
-
         // Insert document using operation.js
         const insertedDoc = await dboper.insertDocument(db, { name: "Vadonut", description: "Test" }, "dishes");
         console.log("Inserted Document:\n", insertedDoc);
