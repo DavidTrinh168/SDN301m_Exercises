@@ -1,0 +1,22 @@
+{
+  "name": "exercise13-node-mongoose",
+  "version": "1.0.0",
+  "description": "Node-mongoose Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www"
+  },
+  "author": "Trinh Ngoc Dai",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "mongoose-currency": "^0.3.0",
+    "morgan": "^1.10.0"
+  }
+}
